@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment24</title>
+</head>
+<body>
+    <script>
+        const name='Omkar';
+        function greetings(){
+            console.log('Happy Holi..');
+        }
+        function myName(name)
+        {
+            console.log(`Hello ${name}`);
+        }
+        
+        function bmiCalculater(weight,height)
+        {
+            let res=weight/height;
+            return res;
+
+        }
+        function retButNoPara()
+        {
+            const car="Audi r8";
+            return console.log(`My Favourite car is ${car}`);
+        }
+        function defPractice(fv,sv="Prajyot")
+        {
+            console.log(`The value of First PAra is ${fv} And The value of Second Para is ${sv}`);
+
+        }
+        console.log(retButNoPara());
+      const bmi= bmiCalculater(60,170);
+      console.log(`The BMI is ==>${bmi}`);
+        myName("Omkar");
+        greetings();
+        defPractice("Omkar");
+    </script>
+</body>
+</html>
