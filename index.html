@@ -17,7 +17,7 @@
         border-radius: 25px;
         display: block;
         width: 400px;
-        margin: 200px auto;
+        margin: 100px auto;
         padding:5px 20px;
         background-color: teal;
         height: 400px;
@@ -55,6 +55,7 @@
       }
       .bmi-btn
       {
+        background: linear-gradient(90deg, rgb(158, 154, 237)0%,rgb(212, 186, 244) 35%, rgb(106, 212, 235) 100%);
         width: 45%;
         margin: 10px auto;
         font-size: 20px;
@@ -69,7 +70,8 @@
       {
         .container{
           width: 85%;
-          margin: 50px auto;
+          margin: 30px auto;
+          height: 320px;
         }
         .text-input{
           width: 80%;
@@ -84,7 +86,7 @@
         }
         .bmi-btn{
           width: 40%;
-          
+          margin: 2px auto;
         }
         
         
@@ -123,6 +125,19 @@
         const cal = parseFloat(weight.value) / parseFloat(height.value);
         let cl=parseInt(cal);
         ans.innerHTML =  `BMI is : ${cl} kg/m<sup>2</sup>`;
+        if(weight=="" ||weight=="")
+        {
+          ansheading.innerHTML =  `Please Enter details.ans-heading{
+              text-align:center;
+              margin-top:80px;
+              font-size:50px;
+            }
+            .container{
+              margin:0px auto;
+              background-color:#00ccff;
+            }
+            </style>`;
+        }
         if(cl<uw)
         {
           console.log `cl=${cl}`;
